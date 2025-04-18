@@ -28,25 +28,25 @@
    overflow: hidden;
  }
  
- .intro {
-   display: flex;
-   align-items: center;
-   gap: 40px;
-   background: linear-gradient(90deg, #e6f9f0 60%, #ffffff 100%);
-   padding: 40px 40px 32px 40px;
-   border-bottom: 1.5px solid var(--muted);
- }
- 
- 
- .intro-image img {
-   width: 170px;
-   height: 170px;
-   object-fit: cover;
-   border-radius: 50%;
-   box-shadow: 0 2px 16px rgba(79, 140, 255, 0.13);
-   border: 5px solid #fff;
-   background: #fff;
- }
+ .intro-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.intro-image img {
+  width: 170px;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 2px 16px rgba(79, 140, 255, 0.13);
+  border: 5px solid #fff;
+  background: #fff;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
  
  .shop-details {
    flex: 1;
