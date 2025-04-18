@@ -170,59 +170,34 @@ footer {
 }
 
 @media (max-width: 700px) {
-  .container {
-    margin: 0;
-    border-radius: 0;
-    box-shadow: none;
-    padding: 0 0 24px 0;
-  }
   .intro {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;    /* Center content horizontally */
     padding: 18px 8px 12px 8px;
     gap: 12px;
+    text-align: center;     /* Center text in shop-details */
+  }
+  .intro-image {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+    margin-bottom: 0;
   }
   .intro-image img {
     width: 120px;
     height: 120px;
     margin-bottom: 8px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
   .shop-details h1 {
-    font-size: 1.5rem;
+    font-size: 2.2rem;     /* Make shop name bigger on phones */
+    text-align: center;
   }
   .tagline {
-    font-size: 1rem;
-  }
-  .products-section {
-    padding: 14px 6px 0 6px;
-  }
-  .products-section h2 {
-    font-size: 1.2rem;
-    margin-bottom: 12px;
-  }
-  .product-grid {
-    grid-template-columns: 1fr;
-    gap: 14px;
-  }
-  .product-card {
-    min-width: 96vw;
-    max-width: 98vw;
-    padding: 12px 4px 10px 4px;
-    margin: 0 auto 16px auto;
-    border-radius: 14px;
-  }
-  .product-card img {
-    width: 90vw;
-    height: 45vw;  /* 2:1 ratio for mobile */
-    border-radius: 12px;
-    margin-bottom: 8px;
-  }
-  .product-card .product-name {
-    font-size: 1rem;
-  }
-  footer {
-    font-size: 0.95rem;
-    margin: 18px 0 8px 0;
+    font-size: 1.15rem;
+    text-align: center;
   }
 }
 }
